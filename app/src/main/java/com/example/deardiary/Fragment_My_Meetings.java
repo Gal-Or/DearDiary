@@ -70,6 +70,7 @@ public class Fragment_My_Meetings extends Fragment_Base {
                     my_meetings_LST_all_meetings.removeViewAt(position);
                     adapter_meeting.notifyItemRemoved(position);
                     adapter_meeting.notifyItemRangeChanged(position, allMeetings.getAllMeeting().size());
+
                 }catch (Exception e){
                     //do noting
                 }

@@ -163,10 +163,12 @@ public class Fragment_New_Meeting extends Fragment_Base {
                 {
                     Toast.makeText(getContext(), "Please Fill All Fields", Toast.LENGTH_SHORT).show();
                     toast=true;
+                    return;
                 }
                 else if (date.equals(getString(R.string.date_format)) || timeStart.equals(getString(R.string.time_format))){
                     Toast.makeText(getContext(), "Date And Time Can Not Be Empty..", Toast.LENGTH_SHORT).show();
                     toast=true;
+                    return;
                 }
 
                 double durationNum=-1;
